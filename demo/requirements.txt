@@ -1,0 +1,27 @@
+# HTTP reverse proxy / round-robin router
+fastapi>=0.133.0,<0.137.0
+uvicorn[standard]>=0.30.0
+httpx>=0.27.0,<1.0
+
+# Multi-round QA benchmark support
+aiohttp>=3.10.0
+numpy>=1.26.0
+pandas>=2.2.0
+tqdm>=4.66.0
+openai==3.3.1
+
+# Tokenizer support used by benchmark workloads
+# transformers==5.12.1 # >=5.5.3,<5.13 # APPLE
+transformers>=5.5.3,<5.13
+tokenizers>=0.21.0
+
+# vllm
+# vllm==0.27.1
+# uv pip install vllm --torch-backend="cu128"
+
+# lmcache
+# lmcache==0.5.4
+
+# apple
+# mlx==0.32.1
+# mlx-metal==0.32.1
